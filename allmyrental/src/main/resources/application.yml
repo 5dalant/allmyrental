@@ -1,0 +1,25 @@
+server:
+  ssl:
+    enabled: true
+    key-store: classpath:allmyrental.jks
+    key-store-password: 5Dalant_00
+    key-store-type: jks
+  port: 8000
+  servlet:
+    session:
+      timeout: 30
+spring:
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob
+  datasource:
+    url: jdbc:mysql://cloudscreen.c5pwainy0yzc.us-east-2.rds.amazonaws.com:3306/allmyrental?characterEncoding=utf-8&autoReconnect=true&validationQuery="select 1"
+    username: christiandesign
+    password: design_00
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
